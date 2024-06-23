@@ -2,12 +2,15 @@
     .container { max-width: 100%!important; }
     .desktop-hero { height: 12vh!important; }
     .position-relative { max-height: auto!important; } 
+    .py-vh-6 a.link-fancy { color: rgb(256, 256, 256)!important; }
+    .py-vh-6 a.link-fancy:hover { color: rgb(253, 126, 20)!important; }
     a.link-fancy { color: rgb(0, 0, 0)!important; }
     a.link-fancy:hover { color: rgb(0, 0, 0)!important; }
     svg#logo { color: #ffffff; }
     .navbar.scrolled svg#logo { color: rgb(0, 0, 0)!important; }
     button.navbar-toggler { border: none;}
     button.navbar-toggler:focus { box-shadow: none;}
+    .py-vh-6 { padding-bottom: 4vh; }
 }    
 
 
