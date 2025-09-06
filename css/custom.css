@@ -34,3 +34,27 @@
 .link-fancy.link-dark:before { background-image: linear-gradient(90deg,#151515 0,#151515 25%,transparent 0,transparent 50%,#151515 0,#151515 75%,transparent 0,transparent); }
 .navbar.scrolled a { color: rgb(0, 0, 0)!important; }
 .navbar.scrolled .link-fancy:before { background-image: linear-gradient(90deg,#151515 0,#151515 25%,transparent 0,transparent 50%,#151515 0,#151515 75%,transparent 0,transparent); }
+/* Default (mobile & tablet): image full width, under text */
+.desktop-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh;             /* controls how tall it looks on small screens */
+  background-size: cover;
+  background-position: center;
+  margin-top: 1rem;         /* adds space below the text */
+}
+
+/* Large desktop: image sits to the right of the text */
+@media (min-width: 1200px) {
+  #top .container {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;       /* makes the hero nice and tall */
+  }
+
+  .desktop-hero {
+    flex: 1;                /* share space with the text block */
+    height: auto;           /* let it scale naturally */
+    margin-top: 0;          /* remove the spacing we added for mobile */
+  }
+}
