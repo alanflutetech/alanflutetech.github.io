@@ -170,23 +170,29 @@
     <div class="container py-vh-4 w-100 overflow-hidden">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-5">
-          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@flutetech/video/7382198871021227310" data-video-id="7382198871021227310" style="max-width: 605px;min-width: 325px;" > 
-            <section> <a target="_blank" title="@flutetech" href="https://www.tiktok.com/@flutetech?refer=embed">@flutetech</a>
-               <p>🔧✨ Journey of Flute Restoration: COA, Dent Removal, and Shimming ✨🔧 In this video, I take you through the meticulous process of restoring a 15&#47;85 Brannen Flute and a 9k gold Mancke Headjoint. First, we dive into the detailed Clean, Oil, and Adjust (COA) process. Watch as I carefully remove the pin from the trill keys, clean, and apply new oil to the rod and hinge tube. Next, I tackle the dent removal on a stunning Mancke headjoint. MANCKE has been producing superior handmade headjoints since 1986, and their legacy of excellence shines through in every piece. Finally, explore the intricate art of shimming. This process requires time, experience, and patience, with constant removal and reassembly of keys to ensure perfect pad sealing. The precision needed is immense, and I’m excited to showcase it accurately for the first time. Stay tuned till the end for a play test to see the results!
-               </p> <a target="_blank" title="♬ original sound - Flute Tech 🪈" href="https://www.tiktok.com/music/original-sound-7382204082041817899?refer=embed">♬ original sound - Flute Tech 🪈
-              
+          <blockquote class="tiktok-embed"
+  cite="https://www.tiktok.com/@flutetech/video/7382198871021227310"
+  data-video-id="7382198871021227310"
+  style="max-width:605px; min-width:325px;">
+  <section>
+    <a target="_blank" title="@flutetech" href="https://www.tiktok.com/@flutetech?refer=embed">@flutetech</a>
+    <a target="_blank" title="♬ original sound - Alan" href="https://www.tiktok.com/music/original-sound-7382204082041817899?refer=embed">♬ original sound - Alan</a>
+  </section>
+</blockquote>
+			
     </div>
     <div class="col-md-7" data-aos="fade-left">
       <div class="col-lg-5">
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@alanward.tech/video/7431771478623882542" data-video-id="7431771478623882542" style="max-width: 605px;min-width: 325px;" > 
-          <section> <a target="_blank" title="@alanward.tech" href="https://www.tiktok.com/@alanward.tech?refer=embed">@alanward.tech</a> Restoring this Buffet R13 clarinet back to perfection! From meticulous key adjustments to conditioning the wood, every step is crafted for ultimate sound quality. Watch the transformation as I bring this Bay Area gem back to life, ready for another chapter of music. 🎶✨  
-            <a title="clarinetrestoration" target="_blank" href="https://www.tiktok.com/tag/clarinetrestoration?refer=embed">#ClarinetRestoration</a> <a title="buffetr13" target="_blank" href="https://www.tiktok.com/tag/buffetr13?refer=embed">#BuffetR13</a> 
-            <a title="woodwindrepair" target="_blank" href="https://www.tiktok.com/tag/woodwindrepair?refer=embed">#WoodwindRepair</a> <a title="instrumentrestoration" target="_blank" href="https://www.tiktok.com/tag/instrumentrestoration?refer=embed">#InstrumentRestoration</a> 
-            <a title="bayareamusic" target="_blank" href="https://www.tiktok.com/tag/bayareamusic?refer=embed">#BayAreaMusic</a> <a title="clarinetcommunity" target="_blank" href="https://www.tiktok.com/tag/clarinetcommunity?refer=embed">#ClarinetCommunity</a> 
-            <a title="musicrepair" target="_blank" href="https://www.tiktok.com/tag/musicrepair?refer=embed">#MusicRepair</a> <a title="luthierlife" target="_blank" href="https://www.tiktok.com/tag/luthierlife?refer=embed">#LuthierLife</a> 
-          <a target="_blank" title="♬ LofiHiphop&#47;comfortable&#47;10 minutes(1463765) - nightbird_bgm" href="https://www.tiktok.com/music/LofiHiphopcomfortable10-minutes-1463765-7257592589195970561?refer=embed">♬ LofiHiphop&#47;comfortable&#47;10 minutes(1463765) - nightbird_bgm</a> 
-        </section> 
-     
+        <blockquote class="tiktok-embed"
+  cite="https://www.tiktok.com/@alanward.tech/video/7431771478623882542"
+  data-video-id="7431771478623882542"
+  style="max-width:605px; min-width:325px;">
+  <section>
+    <a target="_blank" title="@alanward.tech" href="https://www.tiktok.com/@alanward.tech?refer=embed">@alanward.tech</a>
+    <a target="_blank" title="♬ LofiHiphop..." href="https://www.tiktok.com/music/LofiHiphopcomfortable10-minutes-1463765-7257592589195970561?refer=embed">♬ LofiHiphop</a>
+  </section>
+</blockquote>
+		  
   </div>
       <!-- <blockquote>
         <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“The flute work is pristine”</div>
@@ -389,40 +395,7 @@
         duration: 800,
       });
     </script>
-
-    <!-- TikTok Lazy Load -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const embeds = document.querySelectorAll('.tiktok-embed');
-        if (!embeds.length) return;
-
-        function loadTikTokScript() {
-          if (document.querySelector('script[src*="tiktok.com/embed.js"]')) return;
-          const s = document.createElement('script');
-          s.src = 'https://www.tiktok.com/embed.js';
-          s.defer = true;
-          document.body.appendChild(s);
-        }
-
-        if (!('IntersectionObserver' in window)) { 
-          loadTikTokScript(); 
-          return; 
-        }
-
-        let loaded = false;
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting && !loaded) {
-              loaded = true;
-              loadTikTokScript();
-              io.disconnect();
-            }
-          });
-        }, { rootMargin: '200px 0px' });
-
-        embeds.forEach(el => io.observe(el));
-      });
-    </script>
+		<script defer src="https://www.tiktok.com/embed.js"></script>
   </body>
 </html>
   </body>
