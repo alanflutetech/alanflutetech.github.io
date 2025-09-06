@@ -1,6 +1,6 @@
-@media screen and (max-width: 991px){
-  .desktop-hero { height: 12vh !important; }
-}
+@media screen and (max-width: 991px) {
+    .container { max-width: 100%!important; }
+    .desktop-hero { height: 12vh!important; }
     .position-relative { max-height: auto!important; } 
     .py-vh-6 a.link-fancy { color: rgb(256, 256, 256)!important; }
     .py-vh-6 a.link-fancy:hover { color: rgb(253, 126, 20)!important; }
@@ -24,3 +24,13 @@
     .py-vh-4 { padding-top: 0;}
 }    
 
+ 
+.link-fancy { color: rgb(255, 255, 255)!important; }
+.link-fancy:hover { color: rgb(255, 255, 255)!important; }
+.link-fancy:before { background-image: linear-gradient(90deg,#ffffff 0,#ffffff 25%,transparent 0,transparent 50%,#e5e5e5 0,#eee5e5 75%,transparent 0,transparent); }
+
+.link-fancy.link-dark { color: rgb(0, 0, 0)!important; }
+.link-fancy.link-dark:hover  { color: rgb(0, 0, 0)!important; }
+.link-fancy.link-dark:before { background-image: linear-gradient(90deg,#151515 0,#151515 25%,transparent 0,transparent 50%,#151515 0,#151515 75%,transparent 0,transparent); }
+.navbar.scrolled a { color: rgb(0, 0, 0)!important; }
+.navbar.scrolled .link-fancy:before { background-image: linear-gradient(90deg,#151515 0,#151515 25%,transparent 0,transparent 50%,#151515 0,#151515 75%,transparent 0,transparent); }
