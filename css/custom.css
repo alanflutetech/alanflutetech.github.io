@@ -1,6 +1,10 @@
-@media screen and (max-width: 991px) {
-    .container { max-width: 100%!important; }
-    .desktop-hero { height: 12vh!important; }
+@media screen and (max-width: 991px){
+  .desktop-hero {
+    height: 75vh !important;          /* was 12vh */
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
     .position-relative { max-height: auto!important; } 
     .py-vh-6 a.link-fancy { color: rgb(256, 256, 256)!important; }
     .py-vh-6 a.link-fancy:hover { color: rgb(253, 126, 20)!important; }
@@ -45,4 +49,22 @@
   .desktop-hero {
     min-height: 80vh; /* taller hero on mobile */
   }
+}
+/* Hero container should have a minimum height so the absolutely-positioned image
+   and the text column share a consistent space. */
+#top .container {
+  min-height: 70vh;
+}
+
+/* Desktop image block */
+.desktop-hero {
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 100%;            /* fill the container’s min-height */
+  min-height: 70vh;        /* safety */
+}
+
+/* Optional: tweak for very tall desktops */
+@media (min-width: 1400px){
+  #top .container { min-height: 80vh; }
 }
