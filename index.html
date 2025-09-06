@@ -395,7 +395,9 @@
         duration: 800,
       });
     </script>
-		<script defer src="https://www.tiktok.com/embed.js"></script>
+		<script defer src="https://www.tiktok.com/embed.js"
+        onload="setTimeout(() => { if (window.AOS) AOS.refresh(); }, 300);">
+</script>
   </body>
 </html>
   </body>
