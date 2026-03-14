@@ -22,6 +22,7 @@
   <title>Alan Ward, Flute and Clarinet Technician</title>
   <link rel="stylesheet" href="css/theme.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -807,7 +808,7 @@
     </section>
 
     <!-- COUNTDOWN -->
-    <section class="countdown-section">
+    <section class="countdown-section" data-aos="fade-up">
       <div class="countdown-inner">
         <p class="countdown-label">Hawaii Shop Opening</p>
         <div class="countdown-units">
@@ -831,13 +832,13 @@
             <span class="countdown-word">Seconds</span>
           </div>
         </div>
-        <p class="countdown-sub">October 1, 2025 · Honolulu, Hawaii</p>
+        <p class="countdown-sub">October 1, 2026 · Honolulu, Hawaii</p>
       </div>
     </section>
 
     <!-- PHILOSOPHY -->
     <section class="philosophy" id="philosophy">
-      <div class="philosophy-inner">
+      <div class="philosophy-inner" data-aos="fade-up">
         <p class="philosophy-label">The Work</p>
         <h2>Mechanics are the floor,<br>not the <em>ceiling</em></h2>
         <p>Most repair work stops when the pads seal and the action moves freely.</p>
@@ -849,7 +850,7 @@
     <!-- SERVICES -->
     <section class="services" id="services">
       <div class="services-inner">
-        <div class="services-header">
+        <div class="services-header" data-aos="fade-up">
           <div>
             <p class="section-label">Services</p>
             <h2>Two levels<br>of engagement</h2>
@@ -858,8 +859,7 @@
         </div>
         <div class="services-grid">
 
-          <div class="service-card" data-reveal>
-            <span class="service-number">01</span>
+          <div class="service-card" data-aos="fade-up" data-reveal>
             <h3 class="service-name">Harmonic<br>Alignment Session</h3>
             <span class="service-tag">Standard / Hourly</span>
             <p class="service-desc">Clean, oil, adjust. Approached as attunement, not a checklist. The instrument leaves ready to be played. Not just functional. Ready.</p>
@@ -881,11 +881,11 @@
     <!-- ABOUT -->
     <section class="about" id="about">
       <div class="about-inner">
-        <div class="about-image" data-reveal>
+        <div class="about-image" data-aos="fade-right" data-reveal>
           <div class="about-photo"></div>
           <div class="about-image-caption">California · Texas · Hawaii</div>
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left">
           <p class="section-label">About</p>
           <h2>Over fifteen years<br>listening to <em>instruments</em></h2>
           <p>Started in Texas. Moved to Hawaii, where the islands gave me the foundation this work is built on. Gary Harra's mentorship shaped the last four years of that chapter. Then California, Muramatsu certified under Paul Rabinov, Straubinger certified studying directly with Joel Straubinger.</p>
@@ -919,7 +919,7 @@
         <p class="section-label">Testimonials</p>
         <h2>What clients say</h2>
         <p class="lead">Hear directly from a musician about their experience.</p>
-        <div class="video-wrap" data-reveal>
+        <div class="video-wrap" data-aos="fade-up" data-reveal>
           <iframe
             src="https://www.youtube.com/embed/laoBBrC62B4?si=Js1QNSCakOB422OM"
             title="Client testimonial about working with Alan Ward"
@@ -972,7 +972,7 @@
     reveals.forEach(el => observer.observe(el));
 
     // Countdown to October 1 2025 Hawaii time (HST = UTC-10)
-    const target = new Date('2025-10-01T00:00:00-10:00');
+    const target = new Date('2026-10-01T00:00:00-10:00');
 
     function pad(n) { return String(n).padStart(2, '0'); }
 
@@ -1001,6 +1001,11 @@
 
     tick();
     setInterval(tick, 1000);
+  </script>
+
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
   </script>
 
 </body>
