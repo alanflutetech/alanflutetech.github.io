@@ -4,282 +4,922 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-QKCQY6743F');
 </script>
 
 <!doctype html>
 <html class="h-100" lang="en">
 
-  <head>
-      <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="Alan is a Muramatsu & Straubinger certified flute repair technician currently based in Waxahachie, Texas.">
-  <meta name="keywords" content="Flute, Woodwind, Repair, Techniction, Certified, Repair tech, Dallas, dfw, Fort Worth, Texas, Lizzo's flute, Lizzo">
+  <meta name="description" content="Alan Ward is a flute and clarinet repair technician offering Harmonic Alignment Sessions and Harmonic Restorations. Muramatsu and Straubinger certified, based in Hawaii.">
+  <meta name="keywords" content="Flute, Woodwind, Repair, Technician, Certified, Hawaii, Harmonic Alignment, Harmonic Restoration, Flute Repair">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
   <meta name="author" content="Alan Ward">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
-  <title>Alan Ward - Flute and Clarinet Technician</title>
+  <title>Alan Ward, Flute and Clarinet Technician</title>
   <link rel="stylesheet" href="css/theme.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-   <style>
+  <style>
+    :root {
+      --sand: #f5f0e8;
+      --ink: #1a1a18;
+      --brass: #b8976a;
+      --mist: #e8e4dc;
+      --deep: #0f0f0d;
+      --text-secondary: #6b6560;
+    }
 
-/* inter-300 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    * { box-sizing: border-box; }
 
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    html { scroll-behavior: smooth; }
 
-</style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      color: var(--ink);
+      background: var(--sand);
+      overflow-x: hidden;
+    }
 
-  </head>
+    h1, h2, h3, h4, blockquote {
+      font-family: 'Cormorant Garamond', serif;
+    }
 
-  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+    /* ── NAV ── */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s ease, padding 0.4s ease;
+    }
 
-  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-  <div class="container">
-    <a class="navbar-brand pe-4 fs-4" href="index.html">
-    <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewbox="0 0 32 32" width="60" height="60" fill="currentColor" class="bi bi-layers-half" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-<g>
-	<path d="M31.5,6.5h-5l-0.1,1l1.9,0.4l-4,11L20.2,7.8l1.6-0.4l-0.1-1h-5.5l-0.1,1l1.4,0.4l0.6,1.5l-4,9.8L8.9,6L7.4,6.9l-5.6,14
-		l-1.3,0.4l0.1,1h4.5l0.1-1l-1.6-0.4l1.3-3.6c0.5,0,1,0,1.5,0c0.6,0,1.1,0,1.7,0c0.6,0,1.1,0,1.7,0c0.4,0,0.8,0,1.1,0l1.4,3.6
-		l-1.6,0.4l0.1,1h3.9l0.1,0.1l0-0.1h1.5l0.1-1l-1-0.3l3.8-9.5l4.2,10.9h1.2l5.8-14.5l1.4-0.4L31.5,6.5z M7.9,16c-0.9,0-1.6,0-2.2,0
-		c-0.2,0-0.3,0-0.5,0l2.4-6.6l2.6,6.6c-0.1,0-0.1,0-0.2,0C9.5,16,8.7,16,7.9,16z"/>
-	<path d="M14.4,25.4C14.4,25.4,14.4,25.4,14.4,25.4C14.4,25.4,14.4,25.4,14.4,25.4z"/>
-	<path d="M28.6,23.8c-0.2,0-7.6,0-7.6,0c0.1-0.3,0-0.6-0.4-0.6c-1.5,0-11.5-0.1-12.9-0.1c-0.2,0-0.3,0-0.4,0.2
-		c-0.1,0.2,0,0.3,0.1,0.4c0,0,0,0,0,0c-0.5,0-1,0-1.5,0C6,23.5,6,23.4,5.8,23.3c-0.3-0.2-0.9-0.2-1.1,0c-0.1,0.1-0.2,0.2-0.1,0.3
-		c-0.4,0-0.7,0-1.1,0.1c0.1-0.3,0-0.4-0.2-0.5c-0.3-0.1-0.6-0.1-0.9,0c-0.3,0.1-0.3,0.2-0.2,0.5c-0.1,0-0.8,0-1.2,0
-		c-0.3,0-0.3,0-0.4,0.3c-0.1,0.4-0.1,0.8,0,1.3c0.1,0.3,0.2,0.3,0.5,0.3c2.2,0,6.8-0.1,6.8-0.1C8,25.9,8.2,26,8.6,26
-		c0.4,0,0.5-0.2,0.6-0.5c1.7,0,3.5-0.1,5.3-0.1c0.1,0,0.4,0,0.5-0.1c0.2-0.3,0.5-0.3,0.8-0.1c0.1,0.1,0.2,0.2,0.4,0.1
-		c2.4,0,10.6-0.2,12.3-0.2c0.2,0,0.3-0.1,0.4-0.3c0.1-0.3,0.1-0.6,0-0.9C28.8,23.9,28.7,23.8,28.6,23.8z"/>
-</g>
-</svg>
-  <span class="ms-1 fw-bolder"></span>
-</a>
+    .site-nav.scrolled {
+      background: rgba(245, 240, 232, 0.97);
+      backdrop-filter: blur(8px);
+      padding: 1rem 2rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+    }
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      
-  <li class="nav-item">
-    <a class="nav-link" href="#about">
-      About Alan
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .nav-logo svg { width: 44px; height: 44px; fill: currentColor; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink);
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover { opacity: 1; }
+
+    .nav-cta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--sand);
+      background: var(--ink);
+      padding: 0.65rem 1.4rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-cta:hover {
+      background: var(--brass);
+      color: var(--sand);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10rem 5rem 6rem 5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 5vw, 5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--brass);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      max-width: 420px;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.6s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.8s forwards;
+    }
+
+    .btn-primary-dark {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--sand);
+      background: var(--ink);
+      padding: 1rem 2rem;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .btn-primary-dark:hover { background: var(--brass); color: var(--sand); }
+
+    .hero-secondary-link {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 1px;
+      transition: color 0.2s;
+    }
+
+    .hero-secondary-link:hover { color: var(--ink); }
+
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, var(--sand) 0%, transparent 20%);
+      z-index: 1;
+    }
+
+    .hero-image img,
+    .hero-image .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-image: url(img/webp/BrannenGoldFlute.webp);
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* ── PHILOSOPHY ── */
+    .philosophy {
+      padding: 8rem 0;
+      background: var(--ink);
+      color: var(--sand);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .philosophy::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--brass);
+    }
+
+    .philosophy-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .philosophy-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 2rem;
+    }
+
+    .philosophy h2 {
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 2rem;
+    }
+
+    .philosophy h2 em {
+      font-style: italic;
+      color: var(--brass);
+    }
+
+    .philosophy p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(245, 240, 232, 0.65);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      padding: 8rem 0;
+      background: var(--sand);
+    }
+
+    .services-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 1rem;
+    }
+
+    .services-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 5rem;
+      align-items: end;
+    }
+
+    .services-header h2 {
+      font-size: clamp(2.2rem, 3vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .services-header p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .service-card {
+      background: var(--mist);
+      padding: 3.5rem;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .service-card:hover { background: var(--ink); color: var(--sand); }
+    .service-card:hover .service-desc { color: rgba(245,240,232,0.6); }
+    .service-card:hover .service-number { color: rgba(245,240,232,0.15); }
+    .service-card:hover .service-cta { color: var(--brass); border-color: var(--brass); }
+
+    .service-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem;
+      font-weight: 300;
+      line-height: 1;
+      color: rgba(26,26,24,0.08);
+      position: absolute;
+      top: 2rem;
+      right: 2.5rem;
+      transition: color 0.3s;
+    }
+
+    .service-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .service-tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brass);
+      border: 1px solid var(--brass);
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-desc {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      transition: color 0.3s;
+    }
+
+    .service-cta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      padding: 8rem 0;
+      background: var(--mist);
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img,
+    .about-image .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      background-image: url(img/webp/AlanWardShop.webp);
+      background-size: cover;
+      background-position: center;
+      display: block;
+    }
+
+    .about-image-caption {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: var(--brass);
+      color: var(--sand);
+      padding: 1rem 1.5rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .about-text h2 {
+      font-size: clamp(2rem, 2.5vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text h2 em {
+      font-style: italic;
+      color: var(--brass);
+    }
+
+    .about-text p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+    }
+
+    .about-credentials {
+      display: flex;
+      gap: 2rem;
+      margin: 2.5rem 0;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(26,26,24,0.12);
+      border-bottom: 1px solid rgba(26,26,24,0.12);
+    }
+
+    .credential {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    .credential strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+
+    .about-social {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .about-social a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .about-social a:hover { color: var(--brass); border-color: var(--brass); }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials {
+      padding: 8rem 0;
+      background: var(--sand);
+    }
+
+    .testimonials-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonials .lead {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── CONTACT ── */
+    .contact {
+      padding: 8rem 0;
+      background: var(--deep);
+      color: var(--sand);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: -1px; left: 0; right: 0;
+      height: 2px;
+      background: var(--brass);
+    }
+
+    /* Decorative large text */
+    .contact-bg-text {
+      position: absolute;
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18vw;
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.03);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
+    }
+
+    .contact-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .contact h2 {
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .contact h2 em {
+      font-style: italic;
+      color: var(--brass);
+    }
+
+    .contact p {
+      color: rgba(245,240,232,0.55);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-links a:hover { color: var(--brass); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--deep);
+      border-top: 1px solid rgba(245,240,232,0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      color: rgba(245,240,232,0.25);
+      margin: 0;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    [data-reveal].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-content { padding: 8rem 2rem 4rem; }
+      .hero-image { height: 50vw; min-height: 280px; }
+      .hero-image::after { background: linear-gradient(to bottom, var(--sand) 0%, transparent 30%); }
+
+      .services-header { grid-template-columns: 1fr; gap: 1.5rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-image-caption { right: 0; }
+      .nav-links { display: none; }
+    }
+    /* ── COUNTDOWN ── */
+    .countdown-section {
+      background: var(--brass);
+      padding: 3.5rem 2rem;
+      text-align: center;
+    }
+
+    .countdown-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .countdown-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(15,15,13,0.6);
+      margin-bottom: 1.5rem;
+    }
+
+    .countdown-units {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 90px;
+    }
+
+    .countdown-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 300;
+      line-height: 1;
+      color: var(--deep);
+    }
+
+    .countdown-word {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(15,15,13,0.5);
+      margin-top: 0.3rem;
+    }
+
+    .countdown-sep {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      color: rgba(15,15,13,0.3);
+      margin-bottom: 1rem;
+    }
+
+    .countdown-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      color: rgba(15,15,13,0.5);
+      margin-top: 1.25rem;
+      margin-bottom: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a class="nav-logo" href="#top">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <g>
+          <path d="M31.5,6.5h-5l-0.1,1l1.9,0.4l-4,11L20.2,7.8l1.6-0.4l-0.1-1h-5.5l-0.1,1l1.4,0.4l0.6,1.5l-4,9.8L8.9,6L7.4,6.9l-5.6,14l-1.3,0.4l0.1,1h4.5l0.1-1l-1.6-0.4l1.3-3.6c0.5,0,1,0,1.5,0c0.6,0,1.1,0,1.7,0c0.6,0,1.1,0,1.7,0c0.4,0,0.8,0,1.1,0l1.4,3.6l-1.6,0.4l0.1,1h3.9l0.1,0.1l0-0.1h1.5l0.1-1l-1-0.3l3.8-9.5l4.2,10.9h1.2l5.8-14.5l1.4-0.4L31.5,6.5z M7.9,16c-0.9,0-1.6,0-2.2,0c-0.2,0-0.3,0-0.5,0l2.4-6.6l2.6,6.6c-0.1,0-0.1,0-0.2,0C9.5,16,8.7,16,7.9,16z"/>
+          <path d="M28.6,23.8c-0.2,0-7.6,0-7.6,0c0.1-0.3,0-0.6-0.4-0.6c-1.5,0-11.5-0.1-12.9-0.1c-0.2,0-0.3,0-0.4,0.2c-0.1,0.2,0,0.3,0.1,0.4c0,0,0,0,0,0c-0.5,0-1,0-1.5,0C6,23.5,6,23.4,5.8,23.3c-0.3-0.2-0.9-0.2-1.1,0c-0.1,0.1-0.2,0.2-0.1,0.3c-0.4,0-0.7,0-1.1,0.1c0.1-0.3,0-0.4-0.2-0.5c-0.3-0.1-0.6-0.1-0.9,0c-0.3,0.1-0.3,0.2-0.2,0.5c-0.1,0-0.8,0-1.2,0c-0.3,0-0.3,0-0.4,0.3c-0.1,0.4-0.1,0.8,0,1.3c0.1,0.3,0.2,0.3,0.5,0.3c2.2,0,6.8-0.1,6.8-0.1C8,25.9,8.2,26,8.6,26c0.4,0,0.5-0.2,0.6-0.5c1.7,0,3.5-0.1,5.3-0.1c0.1,0,0.4,0,0.5-0.1c0.2-0.3,0.5-0.3,0.8-0.1c0.1,0.1,0.2,0.2,0.4,0.1c2.4,0,10.6-0.2,12.3-0.2c0.2,0,0.3-0.1,0.4-0.3c0.1-0.3,0.1-0.6,0-0.9C28.8,23.9,28.7,23.8,28.6,23.8z"/>
+        </g>
+      </svg>
     </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#testimonials">
-      Testimonials
-    </a>
-  </li>
-
+    <ul class="nav-links">
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
     </ul>
-      <a href="#contact" data-splitbee-event="Click Download" aria-label="Contact me" class="link-light pb-1 link-fancy me-2">
-        Contact me     
-      </a>
+    <a href="https://calendly.com/alanward-tech" class="nav-cta">Book a Session</a>
+  </nav>
 
-    </div>
-</div>
-</nav>
+  <main id="top">
 
-    <main>
-      <div class="w-100 overflow-hidden bg-gray-100" id="top">
-  
-<div class="container position-relative">
-  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover desktop-hero" data-aos="fade-left" style="background-image: url(img/webp/BrannenGoldFlute.webp);">
-    
-  </div>
-    <div class="row">
-
-<div class="col-lg-7 py-vh-6 position-relative top-info" data-aos="fade-right">
-  <h1 class="display-1 fw-bold mt-5">Trusted by Musicians, Defined by Craftsmanship</h1>
-<p class="lead">With over 15 years of experience, Alan Ward is a Muramatsu and Straubinger certified flute and clarinet repair specialist based in Dallas–Fort Worth. From concert halls to recording studios, his work ensures instruments perform at their absolute best.</p>
-  <p><a href="https://calendly.com/alanward-tech" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Book with me</a></p>
-</div>
-
-
-
-</div>
-</div>
-
-</div>
-
-
-<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="about">
-  <div class="container">
-      
-<div class="row d-flex  align-items-center">
-  <div class="col-lg-4">
-      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/webp/AlanWardShop.webp);--bs-aspect-ratio: 150%;">
-      </div>
-</div>
-
-
-
-<div class="col-lg-6">
-  <h3 class="py-5 border-top border-dark" data-aos="fade-left">Alan is a skilled flute and clarinet repair technician with over a decade of experience. 
-  </h3>
-  <p data-aos="fade-up" data-aos-delay="200">He is open to new clients and actively connects technicians worldwide through his instrument repair Discord community. With over a decade of experience, Alan's career began in Texas with Ed Flemming at Fleming Instrument Repair. In 2015, he moved to Hawaii to work with Gary Harra, where he refined his skills for five years. In 2020, Alan made the move to California and earned his Muramatsu certification while studying with Paul Rabinov. In 2025, Alan returned home to Texas, bringing his craft back to the Dallas–Fort Worth area where he continues to serve musicians locally and nationwide. In addition to his repair work, Alan has a background in music performance on the clarinet, inspired by his father, a retired music educator. 
-  </p>
-  <p data-aos="fade-up" data-aos-delay="200" class="small text-muted">He has a deep passion for music technology and sound engineering, which he explores alongside his avid interest in photography. Alan's innovative spirit extends to producing modular synth music under the name “Polychromatic.” Currently, Alan is focused on fostering a community for repair technicians through a Discord channel and monthly digital meetups. His commitment to excellence and community-building makes him a standout in the field of instrument repair. 
-    
-  </p>
-  <p>
-    Follow my repair journey<br>
-    <a href="https://www.tiktok.com/@alanward.tech?is_from_webapp=1&sender_device=pc" target="_blank" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">@TikTok</a> <br>
-    <a href="https://www.instagram.com/alanward.tech/" target="_blank" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">@Instagram</a>
-  </p>
-</div>
-</div>
-
-  </div>
-</div>
-
-<div id="lizzo">
-    <div class="container py-vh-4 w-100 overflow-hidden">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-7" data-aos="fade-right">
-		  <div class="col-lg-5">
-          <blockquote class="tiktok-embed"
-  cite="https://www.tiktok.com/@flutetech/video/7382198871021227310"
-  data-video-id="7382198871021227310"
-  style="max-width:605px; min-width:325px;">
-  <section>
-    <a target="_blank" title="@flutetech" href="https://www.tiktok.com/@flutetech?refer=embed">@flutetech</a>
-    <a target="_blank" title="♬ original sound - Alan" href="https://www.tiktok.com/music/original-sound-7382204082041817899?refer=embed">♬ original sound - Alan</a>
-  </section>
-</blockquote>
-			
-    </div>
-    <div class="col-md-7" data-aos="fade-left">
-      <div class="col-lg-5">
-        <blockquote class="tiktok-embed"
-  cite="https://www.tiktok.com/@alanward.tech/video/7431771478623882542"
-  data-video-id="7431771478623882542"
-  style="max-width:605px; min-width:325px;">
-  <section>
-    <a target="_blank" title="@alanward.tech" href="https://www.tiktok.com/@alanward.tech?refer=embed">@alanward.tech</a>
-    <a target="_blank" title="♬ LofiHiphop..." href="https://www.tiktok.com/music/LofiHiphopcomfortable10-minutes-1463765-7257592589195970561?refer=embed">♬ LofiHiphop</a>
-  </section>
-</blockquote>
-		  
-  </div>
-      <!-- <blockquote>
-        <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“The flute work is pristine”</div>
-        <span><span class="fw-bold">Lizzo</span></span>
-      </blockquote>
-      <br>
-      <iframe width="476" height="267" src="https://abc7news.com/video/embed/?pid=12466333" frameborder="0" allowfullscreen></iframe>
-        <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">
-          <p data-aos="fade-up" data-aos-delay="200" class="small text-muted" style="font-size:.7em;">
-            "The San Francisco Chronicle reports that the classically trained flutist bought the instrument before her performance at the Chase Center.
-            The singer was in town for her music tour, where she introduced the platinum gadget to fans.
-            Lizzo's team initially contacted the local business for repair services on her "Sasha Flute" - the main flute used in her shows." <br><br>
-            <h6>PRESS</h6><p class="small"><a href="https://abc7news.com/lizzo-platinum-floot-san-francisco-flute-world/12465757/" class="link-fancy link-dark small">Read the San Francisco Chronicle article</a> <br> <a href="https://www.sfgate.com/local/article/sf-flute-shop-lizzo-show-17837463.php" class="link-fancy link-dark small">Read the SF gate article</a></p>
-          </p>
-        -->
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- <div class="position-relative overflow-hidden w-100 bg-light" id="gallery">
-  <div class="container-fluid">
-  <div class="row overflow-scroll">
-    <div class="col-12">
-      <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
-        <div class="col-md-2" data-aos="fade-up">
-            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
-        </div>
-
-        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
-        </div>
-
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
-        </div>
-
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
-            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
-        </div>
-
-        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
-            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Flute &amp; Clarinet / Hawaii</p>
+        <h1>Your instrument<br>isn't broken.<br>Your relationship<br>to it might <em>be.</em></h1>
+        <p class="hero-sub">I create conditions where your nervous system settles, your attention sharpens, and your relationship to your instrument reorganizes.</p>
+        <div class="hero-actions">
+          <a href="https://calendly.com/alanward-tech" class="btn-primary-dark">Book a Session</a>
+          <a href="#services" class="hero-secondary-link">See what I offer</a>
         </div>
       </div>
-    </div>
-   </div>
- </div>
-
-</div>
-
-
-
-  </div>
-</div> -->
-
-<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="contact">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="row d-flex justify-content-center text-center">
-  <div class="col-lg-8 text-center" data-aos="fade">
-        <p class="text-secondary lead">Get in touch</p>
-    <h2 class="display-6 mb-5">Alan is availible for new clients and private training remotely.</h2>
-  </div>
-  <div class="col-12">
-    <a href="https://calendly.com/alanward-tech" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Book a COA</a><br>
-    <a href="https://www.tiktok.com/@alanward.tech?is_from_webapp=1&sender_device=pc" class="link-fancy shadow me-3 mt-4">TikTok</a> <a href="https://www.instagram.com/alanward.tech/" class="link-fancy shadow me-3 mt-4">Instagram</a> <a href="mailto:alanflutetech@gmail.com" class="link-fancy shadow me-3 mt-4">Email me</a>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-<div class="bg-light w-100 overflow-hidden" id="testimonials">
-  <div class="container py-vh-6">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 col-lg-10 col-xl-8 text-center">
-        <h2 class="display-6">What Clients Say</h2>
-        <p class="text-secondary lead">
-          Hear directly from a musician about their experience working with Alan.
-        </p>
+      <div class="hero-image">
+        <div class="hero-bg"></div>
       </div>
+    </section>
 
-      <div class="col-12 col-lg-10" data-aos="fade-up">
-        <div class="ratio ratio-16x9 shadow rounded-3">
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+      <div class="countdown-inner">
+        <p class="countdown-label">Hawaii Shop Opening</p>
+        <div class="countdown-units">
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cd-days">--</span>
+            <span class="countdown-word">Days</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cd-hours">--</span>
+            <span class="countdown-word">Hours</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cd-mins">--</span>
+            <span class="countdown-word">Minutes</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-number" id="cd-secs">--</span>
+            <span class="countdown-word">Seconds</span>
+          </div>
+        </div>
+        <p class="countdown-sub">October 1, 2025 · Honolulu, Hawaii</p>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy-inner">
+        <p class="philosophy-label">The Work</p>
+        <h2>Mechanics are the floor,<br>not the <em>ceiling</em></h2>
+        <p>Most repair work stops when the pads seal and the action moves freely.</p>
+        <p>That's where I start.</p>
+        <p>I work through the mechanism. Then I play it. Listen for what it's trying to do. Bring that into alignment with how it feels under the hands. Care, not force. Presence, not urgency.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="services-inner">
+        <div class="services-header">
+          <div>
+            <p class="section-label">Services</p>
+            <h2>Two levels<br>of engagement</h2>
+          </div>
+          <p>Both start with the mechanism. The difference is how far we go. Available in Hawaii and remotely.</p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card" data-reveal>
+            <span class="service-number">01</span>
+            <h3 class="service-name">Harmonic<br>Alignment Session</h3>
+            <span class="service-tag">Standard / Hourly</span>
+            <p class="service-desc">Clean, oil, adjust. Approached as attunement, not a checklist. The instrument leaves ready to be played. Not just functional. Ready.</p>
+            <a href="https://calendly.com/alanward-tech" class="service-cta">Book a Session →</a>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <span class="service-number">02</span>
+            <h3 class="service-name">Harmonic<br>Restoration</h3>
+            <span class="service-tag">Premium / Inquiry Only</span>
+            <p class="service-desc">The full work. Overhaul carried through the energetic dimension. How it speaks. How it breathes. How it responds. For instruments and players ready for that level of attention.</p>
+            <a href="/cdn-cgi/l/email-protection#b8d9d4d9d6ded4cdccddccdddbd0f8dfd5d9d1d496dbd7d5" class="service-cta">Inquire →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-image" data-reveal>
+          <div class="about-photo"></div>
+          <div class="about-image-caption">California · Texas · Hawaii</div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">About</p>
+          <h2>Over fifteen years<br>listening to <em>instruments</em></h2>
+          <p>Started in Texas. Moved to Hawaii, where the islands gave me the foundation this work is built on. Gary Harra's mentorship shaped the last four years of that chapter. Then California, Muramatsu certified under Paul Rabinov, Straubinger certified studying directly with Joel Straubinger.</p>
+          <p>Now I'm returning to Hawaii. I left searching. I'm coming back with something to give.</p>
+          <p>I come from music. Clarinet. My father was a music educator. The technical and the musical have never been separate things for me.</p>
+          <div class="about-credentials">
+            <div class="credential">
+              <strong>Muramatsu</strong>
+              Certified
+            </div>
+            <div class="credential">
+              <strong>Straubinger</strong>
+              Certified
+            </div>
+            <div class="credential">
+              <strong>15+ Years</strong>
+              Experience
+            </div>
+          </div>
+          <div class="about-social">
+            <a href="https://www.instagram.com/alanward.tech/" target="_blank">Instagram</a>
+            <a href="/cdn-cgi/l/email-protection#60010c010e060c1514051405030820070d01090c4e030f0d">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-inner">
+        <p class="section-label">Testimonials</p>
+        <h2>What clients say</h2>
+        <p class="lead">Hear directly from a musician about their experience.</p>
+        <div class="video-wrap" data-reveal>
           <iframe
             src="https://www.youtube.com/embed/laoBBrC62B4?si=Js1QNSCakOB422OM"
             title="Client testimonial about working with Alan Ward"
@@ -288,100 +928,80 @@
           </iframe>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-   
-
-
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
- <!-- <div class="container py-vh-3 border-top" data-aos="fade" data-aos-delay="200" id="newsletter">
-  <div class="row d-flex justify-content-center">
-    <div class="col-12 col-lg-8 text-center">
-      <h3 class="fs-2 fw-light">Stay in touch<span class="fw-bold">
-          new things coming</span>
-    </h3></div>
-    <div class="col-12 col-lg-8 text-center">
-      <div class="row">
-        <div class="grouped-inputs border bg-light p-2">
-  <div class="row">
-    <div class="col">
-      <form class="form-floating">
-        <input type="email" class="form-control p-3" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
-      </form>
-    </div>
-    <div class="col-auto">
-      <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
-    </div>
-  </div>
-</div>
-
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-bg-text">Harmonic</div>
+      <div class="contact-inner">
+        <p class="section-label" style="color: var(--brass);">Book</p>
+        <h2>Open to<br>new <em>clients</em></h2>
+        <p>Book a session directly. If you're thinking about a Harmonic Restoration, reach out by email first. We'll talk about the instrument.</p>
+        <a href="https://calendly.com/alanward-tech" class="btn-primary-dark" style="background: var(--brass); color: var(--sand);">Book a Session</a>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/alanward.tech/" target="_blank">Instagram</a>
+          <a href="/cdn-cgi/l/email-protection#0c6d606d626a6079786978696f644c6b616d6560226f6361"><span class="__cf_email__" data-cfemail="a4c5c8c5cac2c8d1d0c1d0c1c7cce4c3c9c5cdc88ac7cbc9">[email&#160;protected]</span></a>
+        </div>
       </div>
-    </div>
-  </div>
-</div> -->
+    </section>
 
-    </main>
+  </main>
 
-    <footer>
-  <div class="container small border-top">
-    <div class="row py-5 d-flex justify-content-between">
+  <footer>
+    <p>© 2025 Alan Ward</p>
+  </footer>
 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
+    // Nav scroll state
+    const nav = document.getElementById('siteNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
 
-
-<div class="container text-center py-3 small"> All material © 2024 Alan Ward</a>
-</div>
-</footer>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/aos.js"></script>
- <script>
- AOS.init({
-   duration: 800, // values from 0 to 3000, with step 50ms
- });
- </script>
-
- <script>
-  let scrollpos = window.scrollY
-  const header = document.querySelector(".navbar")
-  const header_height = header.offsetHeight
-
-  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
-
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-
-    if (scrollpos >= header_height) { add_class_on_scroll() }
-    else { remove_class_on_scroll() }
-
-    console.log(scrollpos)
-  })
-</script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
+    // Scroll reveal
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
       });
-    </script>
-		<script defer src="https://www.tiktok.com/embed.js"
-        onload="setTimeout(() => { if (window.AOS) AOS.refresh(); }, 300);">
-</script>
-  </body>
-</html>
-  </body>
-</html>
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
 
+    // Countdown to October 1 2025 Hawaii time (HST = UTC-10)
+    const target = new Date('2025-10-01T00:00:00-10:00');
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    function tick() {
+      const now = new Date();
+      const diff = target - now;
+
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent  = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-mins').textContent  = '00';
+        document.getElementById('cd-secs').textContent  = '00';
+        return;
+      }
+
+      const days  = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins  = Math.floor((diff % 3600000)  / 60000);
+      const secs  = Math.floor((diff % 60000)    / 1000);
+
+      document.getElementById('cd-days').textContent  = pad(days);
+      document.getElementById('cd-hours').textContent = pad(hours);
+      document.getElementById('cd-mins').textContent  = pad(mins);
+      document.getElementById('cd-secs').textContent  = pad(secs);
+    }
+
+    tick();
+    setInterval(tick, 1000);
+  </script>
+
+</body>
+</html>
