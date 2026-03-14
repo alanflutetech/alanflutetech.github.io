@@ -870,7 +870,7 @@
             <h3 class="service-name">Harmonic<br>Restoration</h3>
             <span class="service-tag">Premium / Inquiry Only</span>
             <p class="service-desc">The full work. Overhaul carried through the energetic dimension. How it speaks. How it breathes. How it responds. For instruments and players ready for that level of attention.</p>
-            <a href="mailto:alanflutetech@gmail.com" class="service-cta">Inquire →</a>
+            <a href="/cdn-cgi/l/email-protection#10717c717e767c6564756475737850777d71797c3e737f7d" class="service-cta">Inquire →</a>
           </div>
 
         </div>
@@ -906,7 +906,7 @@
           </div>
           <div class="about-social">
             <a href="https://www.instagram.com/alanward.tech/" target="_blank">Instagram</a>
-            <a href="mailto:alanflutetech@gmail.com">Email</a>
+            <a href="/cdn-cgi/l/email-protection#02636e636c646e7776677667616a42656f636b6e2c616d6f">Email</a>
           </div>
         </div>
       </div>
@@ -939,7 +939,7 @@
         <a href="https://calendly.com/alanward-tech" class="btn-primary-dark" style="background: var(--brass); color: var(--sand);" data-aos="fade-up" data-aos-delay="300">Book a Session</a>
         <div class="contact-links" data-aos="fade-up" data-aos-delay="400">
           <a href="https://www.instagram.com/alanward.tech/" target="_blank">Instagram</a>
-          <a href="mailto:alanflutetech@gmail.com">alanflutetech@gmail.com</a>
+          <a href="/cdn-cgi/l/email-protection#71101d101f171d0405140514121931161c10181d5f121e1c"><span class="__cf_email__" data-cfemail="83e2efe2ede5eff6f7e6f7e6e0ebc3e4eee2eaefade0ecee">[email&#160;protected]</span></a>
         </div>
       </div>
     </section>
@@ -950,7 +950,6 @@
     <p>© 2025 Alan Ward</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   <script>
     // Nav scroll state
     const nav = document.getElementById('siteNav');
@@ -971,32 +970,28 @@
     reveals.forEach(el => observer.observe(el));
 
     // Countdown to October 1 2026 Hawaii time (HST = UTC-10)
-    document.addEventListener('DOMContentLoaded', function() {
-      const target = new Date('2026-10-01T00:00:00-10:00');
+    const target = new Date('2026-10-01T00:00:00-10:00');
 
-      function pad(n) { return String(n).padStart(2, '0'); }
+    function pad(n) { return String(n).padStart(2, '0'); }
 
-      function tick() {
-        const now  = new Date();
-        const diff = target.getTime() - now.getTime();
-
-        if (diff <= 0) {
-          document.getElementById('cd-days').textContent  = '00';
-          document.getElementById('cd-hours').textContent = '00';
-          document.getElementById('cd-mins').textContent  = '00';
-          document.getElementById('cd-secs').textContent  = '00';
-          return;
-        }
-
-        document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
-        document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
-        document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
-        document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+    function tick() {
+      const now  = new Date();
+      const diff = target.getTime() - now.getTime();
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent  = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-mins').textContent  = '00';
+        document.getElementById('cd-secs').textContent  = '00';
+        return;
       }
+      document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
+      document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+      document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
+      document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+    }
 
-      tick();
-      setInterval(tick, 1000);
-    });
+    tick();
+    setInterval(tick, 1000);
   </script>
 
   <script src="js/aos.js"></script>
