@@ -333,6 +333,7 @@
       line-height: 1.1;
       letter-spacing: -0.02em;
       margin: 0;
+      color: var(--ink);
     }
 
     .services-header p {
@@ -355,9 +356,15 @@
       transition: background 0.3s;
     }
 
+    .service-card .service-name,
+    .service-card .service-number { color: var(--ink); }
+    .service-card .service-desc { color: var(--text-secondary); }
+    .service-card .service-cta { color: var(--ink); border-color: var(--ink); }
+
     .service-card:hover { background: var(--ink); color: var(--sand); }
+    .service-card:hover .service-name,
+    .service-card:hover .service-number { color: var(--sand); }
     .service-card:hover .service-desc { color: rgba(245,240,232,0.6); }
-    .service-card:hover .service-number { color: rgba(245,240,232,0.15); }
     .service-card:hover .service-cta { color: var(--brass); border-color: var(--brass); }
 
     .service-number {
@@ -576,6 +583,23 @@
       overflow: hidden;
     }
 
+    .contact-photo {
+      position: absolute;
+      inset: 0;
+      background-image: url('img/webp/contact-clarinet.webp');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.45;
+      z-index: 0;
+    }
+
+    .contact-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(15,15,13,0.5) 0%, rgba(15,15,13,0.7) 100%);
+      z-index: 1;
+    }
+
     .contact::before {
       content: '';
       position: absolute;
@@ -605,7 +629,7 @@
       margin: 0 auto;
       padding: 0 2rem;
       position: relative;
-      z-index: 2;
+      z-index: 4;
     }
 
     .contact h2 {
@@ -936,6 +960,8 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
+      <div class="contact-photo"></div>
+      <div class="contact-overlay"></div>
       <div class="contact-bg-text">Harmonic</div>
       <div class="contact-inner">
         <p class="section-label" style="color: var(--brass);" data-aos="fade-down">Book</p>
