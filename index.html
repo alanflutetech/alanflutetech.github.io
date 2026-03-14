@@ -870,7 +870,7 @@
             <h3 class="service-name">Harmonic<br>Restoration</h3>
             <span class="service-tag">Premium / Inquiry Only</span>
             <p class="service-desc">The full work. Overhaul carried through the energetic dimension. How it speaks. How it breathes. How it responds. For instruments and players ready for that level of attention.</p>
-            <a href="/cdn-cgi/l/email-protection#b8d9d4d9d6ded4cdccddccdddbd0f8dfd5d9d1d496dbd7d5" class="service-cta">Inquire →</a>
+            <a href="mailto:alanflutetech@gmail.com" class="service-cta">Inquire →</a>
           </div>
 
         </div>
@@ -906,7 +906,7 @@
           </div>
           <div class="about-social">
             <a href="https://www.instagram.com/alanward.tech/" target="_blank">Instagram</a>
-            <a href="/cdn-cgi/l/email-protection#60010c010e060c1514051405030820070d01090c4e030f0d">Email</a>
+            <a href="mailto:alanflutetech@gmail.com">Email</a>
           </div>
         </div>
       </div>
@@ -939,7 +939,7 @@
         <a href="https://calendly.com/alanward-tech" class="btn-primary-dark" style="background: var(--brass); color: var(--sand);" data-aos="fade-up" data-aos-delay="300">Book a Session</a>
         <div class="contact-links" data-aos="fade-up" data-aos-delay="400">
           <a href="https://www.instagram.com/alanward.tech/" target="_blank">Instagram</a>
-          <a href="/cdn-cgi/l/email-protection#0c6d606d626a6079786978696f644c6b616d6560226f6361"><span class="__cf_email__" data-cfemail="a4c5c8c5cac2c8d1d0c1d0c1c7cce4c3c9c5cdc88ac7cbc9">[email&#160;protected]</span></a>
+          <a href="mailto:alanflutetech@gmail.com">alanflutetech@gmail.com</a>
         </div>
       </div>
     </section>
@@ -970,36 +970,33 @@
     }, { threshold: 0.12 });
     reveals.forEach(el => observer.observe(el));
 
-    // Countdown to October 1 2025 Hawaii time (HST = UTC-10)
-    const target = new Date('2026-10-01T00:00:00-10:00');
+    // Countdown to October 1 2026 Hawaii time (HST = UTC-10)
+    document.addEventListener('DOMContentLoaded', function() {
+      const target = new Date('2026-10-01T00:00:00-10:00');
 
-    function pad(n) { return String(n).padStart(2, '0'); }
+      function pad(n) { return String(n).padStart(2, '0'); }
 
-    function tick() {
-      const now = new Date();
-      const diff = target - now;
+      function tick() {
+        const now  = new Date();
+        const diff = target.getTime() - now.getTime();
 
-      if (diff <= 0) {
-        document.getElementById('cd-days').textContent  = '00';
-        document.getElementById('cd-hours').textContent = '00';
-        document.getElementById('cd-mins').textContent  = '00';
-        document.getElementById('cd-secs').textContent  = '00';
-        return;
+        if (diff <= 0) {
+          document.getElementById('cd-days').textContent  = '00';
+          document.getElementById('cd-hours').textContent = '00';
+          document.getElementById('cd-mins').textContent  = '00';
+          document.getElementById('cd-secs').textContent  = '00';
+          return;
+        }
+
+        document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
+        document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+        document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
+        document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
       }
 
-      const days  = Math.floor(diff / 86400000);
-      const hours = Math.floor((diff % 86400000) / 3600000);
-      const mins  = Math.floor((diff % 3600000)  / 60000);
-      const secs  = Math.floor((diff % 60000)    / 1000);
-
-      document.getElementById('cd-days').textContent  = pad(days);
-      document.getElementById('cd-hours').textContent = pad(hours);
-      document.getElementById('cd-mins').textContent  = pad(mins);
-      document.getElementById('cd-secs').textContent  = pad(secs);
-    }
-
-    tick();
-    setInterval(tick, 1000);
+      tick();
+      setInterval(tick, 1000);
+    });
   </script>
 
   <script src="js/aos.js"></script>
