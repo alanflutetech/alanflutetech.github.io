@@ -216,6 +216,7 @@
     .hero-image {
       position: relative;
       overflow: hidden;
+      min-height: 100vh;
     }
 
     .hero-image::after {
@@ -684,7 +685,9 @@
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-content { padding: 8rem 2rem 4rem; }
-      .hero-image { height: 50vw; min-height: 280px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-image { height: 60vw; min-height: 260px; min-height: unset; }
+      .hero-image::after { background: linear-gradient(to bottom, var(--sand) 0%, transparent 30%); }
       .hero-image::after { background: linear-gradient(to bottom, var(--sand) 0%, transparent 30%); }
 
       .services-header { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -950,7 +953,7 @@
     <p>© 2025 Alan Ward</p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Nav scroll state
     const nav = document.getElementById('siteNav');
     window.addEventListener('scroll', () => {
@@ -969,11 +972,9 @@
     }, { threshold: 0.12 });
     reveals.forEach(el => observer.observe(el));
 
-    // Countdown to October 1 2026 Hawaii time (HST = UTC-10)
+    // Countdown to October 1 2026 Hawaii time
     const target = new Date('2026-10-01T00:00:00-10:00');
-
     function pad(n) { return String(n).padStart(2, '0'); }
-
     function tick() {
       const now  = new Date();
       const diff = target.getTime() - now.getTime();
@@ -989,13 +990,25 @@
       document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
       document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
     }
-
     tick();
     setInterval(tick, 1000);
+
     // Email assembly - bypass Cloudflare obfuscation
     (function() {
       var u = 'alanflutetech';
       var d = 'gmail.com';
       var href = 'mai' + 'lto:' + u + '@' + d;
       ['email-inquire','email-about','email-contact'].forEach(function(id) {
-        var el = document.ge
+        var el = document.getElementById(id);
+        if (el) el.href = href;
+      });
+    })();
+  </script>
+
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>
