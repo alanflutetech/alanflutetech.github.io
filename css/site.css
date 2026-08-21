@@ -467,6 +467,7 @@ button {
   font-size: 0.82rem;
   line-height: 1.6;
   color: var(--text-secondary);
+  text-wrap: pretty;
 }
 
 /* ── SERVICES ──────────────────────────────────────────────────────────── */
